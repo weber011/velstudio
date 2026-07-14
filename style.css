@@ -778,6 +778,38 @@ h1, h2, h3, h4, .logo {
     transform: translateY(0);
 }
 
+/* ===== Posters Section ===== */
+.posters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.poster-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: var(--transition-fast);
+}
+
+.poster-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    background: #fff;
+}
+
+.poster-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.full-width-banner {
+    display: block;
+    margin: 0 auto;
+}
+
 /* ===== Responsive Design ===== */
 @media (max-width: 992px) {
     .about-content, .location-contact-wrapper {
