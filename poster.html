@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vel Creations | Connect With Us</title>
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Vel Creations | Digital Profile">
+    <meta property="og:description" content="Connect with Vel Creations for premium designs, hampers, and customized gifts.">
+    <meta property="og:image" content="https://vel-studio.vercel.app/images/LOGO.jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0A2A1A;
+            --secondary: #C5A059;
+            --bg: #FDFBF7;
+            --text: #333;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+        .profile-card {
+            background: #fff;
+            max-width: 450px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(135deg, var(--primary), #1a4a32);
+            z-index: 0;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        p.bio {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 1rem;
+            background: var(--bg);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+        .link-btn:hover {
+            background: var(--primary);
+            color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(10, 42, 26, 0.15);
+        }
+        .link-btn.highlight {
+            background: var(--primary);
+            color: var(--secondary);
+        }
+        .link-btn.highlight:hover {
+            background: #1a4a32;
+        }
+        .qr-section {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px dashed #eee;
+        }
+        .qr-section h3 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .qr-image {
+            max-width: 250px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .qr-image:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+        .footer a {
+            color: #aaa;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="images/LOGO.jpeg" alt="Vel Creations Logo" class="avatar">
+        <h1>Vel Creations</h1>
+        <p class="bio">Premium Onam gift hampers, creative designs, personalized gifts, custom stitching, and more in Trivandrum, Kerala.</p>
+        
+        <div class="links">
+            <a href="index.html" class="link-btn highlight">
+                <i class="fas fa-globe"></i> Visit Our Website
+            </a>
+            <a href="https://wa.me/918304062682" target="_blank" class="link-btn">
+                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </a>
+            <a href="https://instagram.com/velstudio94" target="_blank" class="link-btn">
+                <i class="fab fa-instagram"></i> Follow on Instagram
+            </a>
+            <a href="mailto:velstudio94@gmail.com" class="link-btn">
+                <i class="fas fa-envelope"></i> Email Us
+            </a>
+        </div>
+
+        <div class="qr-section">
+            <h3>Check us out on Google!</h3>
+            <img src="images/google_qr.png" alt="Google Review QR Code" class="qr-image">
+        </div>
+
+        <div class="footer">
+            Built by <a href="https://webbybuilder.vercel.app/" target="_blank">WebbyBuilder</a>
+        </div>
+    </div>
+</body>
+</html>
